@@ -1,0 +1,17 @@
+body {text-align: center; }
+#principal  {
+      display: block;
+      width: 550px;
+      margin: 50px auto;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #999999;
+      background: hsla(59, 68%, 76%, 0.743);
+      outline: 2px dashed #000099;
+      outline-offset: 15px;
+      border-radius: 25% 25%  25% 25% ;
+      box-shadow: 5px 5px 10px rgb(225, 108, 108) 
+}
+#titulo { font: bold 36px verdana, sans-serif; 
+      border: 3px dotted red;
+}
