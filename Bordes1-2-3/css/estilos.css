@@ -1,0 +1,71 @@
+body{
+ background-color: rgb(0, 86, 120);
+ margin: 0 auto;
+}
+#principal{
+    width: 900px; 
+    height: 900px;
+    background-color: white;
+    margin: 0 auto;
+}
+h2,h1{
+    margin-left: 15px;
+    font-size: 26px;
+}
+#b1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 700px;
+    margin: 0 auto;
+}
+#caja1{
+    border:  1px solid black;
+    padding: 15px;
+    width: 105px;
+    border-radius: 10px 100px / 120px;
+    text-align: center;
+}
+#caja3{
+    border-radius: 25px;    background: linear-gradient(to  bottom , rgb(194, 231, 250), rgb(50, 194, 233));
+}
+#caja4{
+    box-shadow: inset 0 0 15px 0 rgb(181, 234, 238) ;
+    border-radius: 25px;}
+#caja5{
+    border-radius: 25px;
+    
+}
+#b2{
+    margin: 0 auto;
+ width: 700px;
+}
+#b2 p{
+    width: 600px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+#caja7{
+    box-shadow: 0 5px 5px rgb(44, 208, 245);
+    border: 1px solid black;
+}
+#caja9{
+    text-shadow: 2px 0 rgb(44, 208, 245)}
+#caja10{
+    background: linear-gradient(to  right , rgb(194, 231, 250), rgb(50, 194, 233))
+}
+p{
+    margin-left: 40px;
+    border:  1px solid black;
+    padding: 15px;
+    width: 105px;
+    text-align: center;
+}
+footer{
+    margin: 0 auto;
+    width: 900px;
+    bottom: 40px;
+    position: absolute;
+    text-align: center;
+
+}
