@@ -5,7 +5,7 @@
 body{
     padding-top: 20px;
     text-align: center;
-    background-image: url(/Diw/practica1-2-3/imgs/old_map.png);
+    background: linear-gradient(rgb(248, 105, 43), rgb(248, 209, 216));
 }
 #page{
     width: 960px;
@@ -15,17 +15,17 @@ body{
     margin-right: auto;
     text-align: left;
 }
-#header{
+header{
     font:Courier ;
     color: white;
     size: 1.1em;
     border-bottom: 6px;
     border: solid;
     border-color: black;
-    background-color: #313B44;
+    background: linear-gradient(rgb(28, 135, 235), rgb(139, 204, 239));
 }
 h1 {
-    background-image: url(/Diw/practica1-2-3/imgs/logo.png);
+    background-image: url(/practica3-3/img/logo.png);
     background-repeat: no-repeat;
     margin-left: 25px;
     padding-top: 20px;
@@ -33,16 +33,15 @@ h1 {
     padding-left: 100px;
     padding-right: 100px;
 }
-#nav{
+nav{
     font:courier 1.4em silver;
     text-align: center;
-    background-image: url(/Diw/practica1-2-3/imgs/red015.jpg);
-    
+    background: linear-gradient(rgb(231, 220, 2), rgb(193, 197, 117));
 }
-#nav li{
+nav li{
     list-style-type: none;
 }
-#nav li a{
+nav li a{
     padding-top: 80px;
     margin-top: 0px;
     margin-right: 100px;
@@ -55,7 +54,7 @@ h1 {
 }
 
 #contenidos{
-    background-image: url(/Diw/practica1-2-3/imgs/book.png);
+    background-image: url(/practica3-3/img/book.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
@@ -64,18 +63,16 @@ h1 {
 }
 
 #videos{
-    background-image: url(/Diw/practica1-2-3/imgs/film.png);
+    background-image: url(/practica3-3/img/film.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
 }
 #contacto{
-    background-image: url(/Diw/practica1-2-3/imgs/mail.png);
+    background-image: url(/practica3-3/img/mail.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
-    
-    
 }
 li a{
     text-decoration: none;
@@ -84,41 +81,44 @@ li a{
 li a:hover{
     color: white;
 }
-#content{
+section{
     font: verdana 0.8em;
-    background-image: url(/Diw/practica1-2-3/imgs/lgrey008.jpg);
+    background-image: url(/practica3-3/img/lgrey008.jpg) ;
 }
 .article{
     width: 240px;
-    border: 1px lightgray solid;
-    background-color: white;
     text-align: center;
     line-height: 1.8em;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5;
+    background-color: white;
     padding-bottom: 22px;
     margin: 30px;
     float: left;
+    border: 2px solid;
+    background-image: url(/practica3-3/img/movil.png) ;
+    
 }
 .clearfix:before,
 .clearfix:after,
-#content
+section
 {
 width:100%;
 display: table;
 } 
 .article_header{
     border-bottom:1px #999999 solid ;
+
 }
 h2{
     font-size: 1.2em;
     padding: 10px;
 }
-#footer{
+footer{
     color: white;
     text-align: center;
-    background-color: #313B44;
+    background: linear-gradient(rgb(28, 135, 235), rgb(139, 204, 239));
     border-top: 6px;
     color: black;
     border: solid;
