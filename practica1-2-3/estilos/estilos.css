@@ -5,7 +5,7 @@
 body{
     padding-top: 20px;
     text-align: center;
-    background-image: url(/Diw/practica1-2-3/imgs/old_map.png);
+    background-image: url(imgs/old_map.png);
 }
 #page{
     width: 960px;
@@ -25,7 +25,7 @@ body{
     background-color: #313B44;
 }
 h1 {
-    background-image: url(/Diw/practica1-2-3/imgs/logo.png);
+    background-image: url(imgs/logo.png);
     background-repeat: no-repeat;
     margin-left: 25px;
     padding-top: 20px;
@@ -36,7 +36,7 @@ h1 {
 #nav{
     font:courier 1.4em silver;
     text-align: center;
-    background-image: url(/Diw/practica1-2-3/imgs/red015.jpg);
+    background-image: url(imgs/red015.jpg);
     
 }
 #nav li{
@@ -55,7 +55,7 @@ h1 {
 }
 
 #contenidos{
-    background-image: url(/Diw/practica1-2-3/imgs/book.png);
+    background-image: url(imgs/book.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
@@ -64,13 +64,13 @@ h1 {
 }
 
 #videos{
-    background-image: url(/Diw/practica1-2-3/imgs/film.png);
+    background-image: url(imgs/film.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
 }
 #contacto{
-    background-image: url(/Diw/practica1-2-3/imgs/mail.png);
+    background-image: url(imgs/mail.png);
     background-repeat:no-repeat ;
     text-align: center;
     margin-top: 10px;
@@ -86,7 +86,7 @@ li a:hover{
 }
 #content{
     font: verdana 0.8em;
-    background-image: url(/Diw/practica1-2-3/imgs/lgrey008.jpg);
+    background-image: url(imgs/lgrey008.jpg);
 }
 .article{
     width: 240px;
