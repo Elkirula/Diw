@@ -83,10 +83,11 @@ li a:hover{
 }
 section{
     font: verdana 0.8em;
+
     background-image: url(../img/lgrey008.jpg) ;
 }
 .article {
-    width: 240px;
+    width: 220px;
     text-align: center;
     line-height: 1.8em;
     padding-left: 5px;
@@ -94,11 +95,11 @@ section{
     padding-top: 5px;
     background-color: white;
     padding-bottom: 22px;
-    margin: 30px;
+    margin: 20px;
     float: left;
-    border: 2px solid;
+    border: 25px solid;
     border-image: url(../img/movil.png);
-    border-image-slice: 70 20 80 30; 
+    border-image-slice: 68 50 65 50; 
 }
 
 .clearfix:before,
