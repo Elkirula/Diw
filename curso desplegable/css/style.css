@@ -1,0 +1,258 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding-top: 20px;
+    text-align: center;
+    background: linear-gradient(rgb(248, 105, 43), rgb(248, 209, 216));
+}
+#page{
+    width: 960px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+header{
+    font:Courier ;
+    color: white;
+    size: 1.1em;
+    border-bottom: 6px;
+    border: solid;
+    border-color: black;
+    background: linear-gradient(rgb(28, 135, 235), rgb(139, 204, 239));
+}
+h1 {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#nav1{
+    font:courier 1.4em silver;
+    text-align: center;
+    background: linear-gradient(rgb(231, 220, 2), rgb(193, 197, 117));
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#contenidos{
+    background-image: url(../img/book.png);
+    background-repeat:no-repeat ;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+}
+
+#videos{
+    background-image: url(../img/film.png);
+    background-repeat:no-repeat ;
+    text-align: center;
+    margin-top: 10px;
+}
+#contacto{
+    background-image: url(../img/mail.png);
+    background-repeat:no-repeat ;
+    text-align: center;
+    margin-top: 10px;
+}
+li a{
+    text-decoration: none;
+    color: orange;
+}
+li a:hover{
+    color: white;
+}
+section{
+    font: verdana 0.8em;
+
+    background-image: url(../img/lgrey008.jpg) ;
+}
+.article {
+    width: 220px;
+    text-align: center;
+    line-height: 1.8em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: white;
+    padding-bottom: 22px;
+    margin: 20px;
+    float: left;
+    border: 25px solid;
+    border-image: url(../img/movil.png);
+    border-image-slice: 68 50 65 50; 
+}
+
+.clearfix:before,
+.clearfix:after,
+section
+{
+width:100%;
+display: table;
+} 
+.article_header{
+    border-bottom:1px #999999 solid ;
+
+}
+h2{
+    font-size: 1.2em;
+    padding: 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgb(28, 135, 235), rgb(139, 204, 239));
+    border-top: 6px;
+    color: black;
+    border: solid;
+    padding-top:15px ;
+    padding-bottom: 15px;
+}
+
+/* Add these styles to your existing CSS */
+
+.article_header {
+    position: relative; /* Add relative positioning to the article header */
+}
+
+.chincheta {
+    width: 35px;
+    height: 49px;
+    background-image: url('../img/chincheta.png'); /* Update with the correct path */
+    background-size: cover;
+    position: absolute;
+    top: -91px;
+}
+
+/* Add a media query to control the positioning on mobile devices */
+@media only screen and (max-width: 768px) {
+    .chincheta {
+        top: 0; /* Adjust as needed for mobile positioning */
+    }
+}
+/* Update these styles in your existing CSS */
+
+/* Adjust the top margin to avoid overlap with the navigation bar */
+.article {
+    margin-top: 30px;
+}
+
+/* Chincheta positioning for each article */
+.article:nth-child(1) .chincheta {
+    left: 199px;
+}
+
+.article:nth-child(2) .chincheta {
+    left: 120px;
+}
+
+.article:nth-child(3) .chincheta {
+    left: 30px;
+}
+
+/* Rotate the first and third articles */
+.article:nth-child(1) {
+    transform: rotate(-2deg);
+}
+
+.article:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+/* Add these styles to your existing CSS */
+
+nav li a {
+    /* existing styles... */
+    text-shadow: 0px 0px 5px white; /* Add text-shadow for the hover effect */
+}
+
+/* Update the styles for the hover effect with transition */
+
+nav li a {
+    /* existing styles... */
+    text-shadow: 0px 0px 5px white;
+    transition: text-shadow 0.5s ease; /* Add transition property */
+}
+
+nav li a:hover {
+    color: white;
+    text-shadow: 2px 2px 0px red;
+}
+
+
+/* Add these styles to your existing CSS */
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ff7e42;
+}
+
+/* Dropdown styles */
+nav .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #e34c26;
+    border-top: 3px solid #e34c26;
+    margin-top: 0;
+    z-index: 2;
+}
+
+nav .dropdown li {
+    background-color: #f06529;
+}
+
+nav .dropdown a {
+    padding: 10px 20px;
+}
+
+/* Triangle above the first element */
+nav #videos .dropdown:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #e34c26 transparent transparent transparent;
+}
+
+/* Show dropdown on hover */
+nav #videos:hover .dropdown {
+    display: block;
+}

@@ -1,0 +1,164 @@
+
+
+body {
+    margin: 0;
+}
+
+main {
+    background-image: url('../img/fondoForm.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedorFormulario {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    margin: 50px;
+    padding: 20px 50px;
+    background-color: rgba(200, 200, 200, 0.7);
+    text-align: left;
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow:
+        0px 1px 4px rgba(0, 0, 0, 0.3),
+        inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px;
+    margin: 1px 45px 10px 4px;
+    transition: all 0.4s ease-in;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow:
+        0px 1px 8px rgba(0, 0, 0, 0.5),
+        inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+#tituloFormulario {
+    position: absolute;
+    top: -16px;
+    left: 490px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Aguafina Script', cursive;
+    color: #333;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+    padding: 0 10px;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+#nombre,
+#email {
+    height: 32px;
+    width: 330px;
+    box-shadow:
+        0px 1px 4px rgba(0, 0, 0, 0.3),
+        inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in;
+    margin-bottom: 10px;
+}
+
+#nombre:focus,
+#email:focus {
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+#nombre {
+    background: url('../img/icon-nombre.png') no-repeat 10px center;
+    padding-left: 40px; /* Adjust as needed */
+}
+
+#email {
+    background: url('../img/icon-correo.png') no-repeat 10px center;
+    padding-left: 40px; /* Adjust as needed */
+}
+/* Add these styles to your existing CSS file */
+
+#nombre:focus,
+#email:focus {
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+    background-position: 390px center;
+}
+
+#nombre.valid,
+#email.valid {
+    background-image: url('../img/valid.png'), url('../img/icon-nombre.png');
+    background-position: 390px center, 10px center;
+}
+
+#nombre.invalid,
+#email.invalid {
+    background-image: url('../img/invalid.png'), url('../img/icon-nombre.png');
+    background-position: 390px center, 10px center;
+}
+
+
+input:required + label::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+#mensaje {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    background: url('../img//icon-mensaje.png') no-repeat 10px center;
+    padding-left: 40px; /* Adjust as needed */
+    box-shadow:
+        0px 1px 4px rgba(0, 0, 0, 0.3),
+        inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in;
+    margin-bottom: 10px;
+}
+
+#mensaje:focus {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+/* Add these styles to your existing CSS file */
+
+button {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border: 1px solid #434343;
+    color: white;
+    background: linear-gradient(#5e5e5e, #2a2a2a);
+    box-shadow: inset 0px 1px 1px #353535;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(#2a2a2a, #5e5e5e);
+}
+

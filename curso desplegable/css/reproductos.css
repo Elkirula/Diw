@@ -1,0 +1,44 @@
+/* estilos para la barra de navegación y progreso */
+#barra {
+    width: 705px;
+    height: 16px;
+    padding: 2px;
+    border-top: 6px solid #CCCCCC;
+    background: #EEEEEE;
+    position: absolute;
+    bottom: 0.5px;
+}
+
+#progreso {
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background: rgba(0, 0, 150, 0.2);
+}
+
+main {
+    background-color: white;
+    display: flex; 
+}
+
+main #contenido {
+    width: 720px;
+    height: 450px;
+    border: 10px solid #CCCCCC;
+    position: relative;
+
+}
+
+
+#nav input {
+    background-color: orange;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+#nav{
+    margin-left: 60px;
+}
