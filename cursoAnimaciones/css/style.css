@@ -142,7 +142,38 @@ footer{
     position: absolute;
     top: -91px;
 }
+/*Animacion chincheta*/
 
+.articulo1{
+    animation: animArticle1 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.articulo3{
+    animation: animArticle3 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes animArticle1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+}
+
+@keyframes animArticle3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(2deg);
+    }
+}
 /* Add a media query to control the positioning on mobile devices */
 @media only screen and (max-width: 768px) {
     .chincheta {
