@@ -151,7 +151,7 @@ footer{
 }
 
 .articulo3{
-    animation: animArticle3 1s;
+    animation: animArticle3 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 }
