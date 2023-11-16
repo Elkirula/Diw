@@ -5,7 +5,7 @@
 body{
     padding-top: 20px;
     text-align: center;
-    background: linear-gradient(rgb(248, 105, 43), rgb(248, 209, 216));
+    background: linear-gradient(rgb(248, 105, 43), rgb(248, 209, 216));/*Degradado*/
 }
 #page{
     width: 960px;
@@ -39,7 +39,7 @@ h1 {
     background: linear-gradient(rgb(231, 220, 2), rgb(193, 197, 117));
 }
 nav li{
-    list-style-type: none;
+    list-style-type: none;/*Quitar estilo lista*/
 }
 nav li a{
     padding-top: 80px;
@@ -50,7 +50,7 @@ nav li a{
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer;/*Poner el cursor normal*/
 }
 
 #contenidos{
@@ -101,7 +101,7 @@ section{
     border-image: url(../img/movil.png);
     border-image-slice: 68 50 65 50; 
 }
-
+/*Este selector se aplica a los elementos HTML section y aplica el mismo estilo que se menciona anteriormente, con un ancho del 100% y una visualización como table.*/
 .clearfix:before,
 .clearfix:after,
 section
@@ -128,10 +128,10 @@ footer{
     padding-bottom: 15px;
 }
 
-/* Add these styles to your existing CSS */
+
 
 .article_header {
-    position: relative; /* Add relative positioning to the article header */
+    position: relative; /*  positioning realativa article header */
 }
 
 .chincheta {
@@ -239,7 +239,7 @@ nav ul {
 nav li {
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 1;/*superposicion*/
 }
 
 nav a {
