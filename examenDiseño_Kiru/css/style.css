@@ -2,7 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Cabecera */
@@ -15,7 +18,9 @@ body {
     background-color: #071357;
     margin: 0;
 }
-
+h1{
+    text-shadow: red;
+}
 #banner img {
     vertical-align: middle;
     max-height: 90%;
@@ -32,9 +37,48 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: rgb(234, 245, 220);
     margin: 0;
     height: 90px;
+}
+
+nav{
+    background-color: #bec3c1;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+}
+li{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+li::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width .5s;
+}
+
+li a:hover {
+    color: rgb(4, 52, 80);
+}
+
+li:hover::after {
+    width: 100%;
+    background-color: rgb(45,168,240);
 }
 
 
@@ -123,7 +167,7 @@ nav > ul > li > ul > li:first-child:before {
     border: 5px solid transparent;
     /* Como es un cuadrado (BORDES) pero solo le pongo dimensión en la bottom
     lo que conseguimos es que haga un triángulo */
-    border-bottom-color: #72f029;
+    border-bottom-color: #b3b3b3;
      /* Posición del contenedor donde aparece, mitad en este caso */
     left: 50%;
     top: -11px;
@@ -176,6 +220,10 @@ aside {
     position: absolute;
 }
 
+aside a{
+    color: black;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -202,7 +250,17 @@ footer {
     box-sizing: border-box; /* Para incluir el padding en el ancho máximo */
 }
 
+/*estilos tablas productos*/
 
 table{
     margin-bottom: 140px;
+    margin-top: 40px;
 }
+
+table th{
+    background-color: rgb(223, 193, 159);
+}
+.ac{
+    background-color: rgb(249, 124, 124);
+}
+

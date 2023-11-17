@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="icon" href="img/espornets.png" type="image/x-icon">
+
+    <title>ESPORNETS</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 140px;
+            margin-top: 50px;
+
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+/*Validar dni*/
+        .cl-validate-dni {
+            min-width: 300px;
+            padding: 0.5em;
+            font-size: 1.2em;
+        }    
+        .cl-validate-dni:invalid {
+                outline: red solid 2px;
+            }  
+    </style>
+   
+</head>
+<body>
+  
+    <h1 id="banner"><img  src="img/espornets.png" id="logo">ESPORNETS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="submenu"><a href="">Productos</a>
+                <ul>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer</a></li>
+                </ul></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+
+    <span>
+    
+    <form>
+        <input type="text" placeholder="Nombre y Apellidos*" required>
+        <input type="text"  class="cl-validate-dni"  pattern="[0-9]{8}[A-Za-z]{1}" placeholder="DNI*" required>
+        <input type="email" multiple placeholder="Correo electrónico*" required>
+        <input type="tel" pattern="[0-9]{9}" multiple  placeholder="Numero de télefono*" required><br>
+        <br>
+        <label>Fecha de namiento:</label>
+        <input type="date" required>
+        <br>
+        <label>Productos disponibles Mujer:</label>
+        <select required>
+            <option>ZM-120-RUN</option>
+            <option>ZM-150-PRO</option>
+            <option>ZM-120-SUP</option>
+            <option>ZM-120-PRO</option>
+        </select>
+        <label>Productos disponibles Hombre:</label>
+        <select required>
+            <option>ZM-120-RUN</option>
+            <option>ZM-150-PRO</option>
+            <option>ZM-120-SUP</option>
+            <option>ZM-120-PRO</option>
+        </select>
+        <label>De que color quiere la caja</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <label>Numero de unidades que quiere comprar: </label>
+        <input type="number" max="10" value="1">
+        <input type="submit" value="Continuar">
+    </form>
+    <span><p></p></span>
+    <footer>
+        <div class="footer-columns">
+            <div class="column">
+                <p>Descubre nuestra colección de calzado deportivo para mujer. Calidad y confort en cada
+                    paso.</p>
+            </div>
+            <div class="column">
+                <p>ESPORNETS - Calzado deportivo de calidad para todos</p>
+            </div>
+            <div class="column">
+                <p>Explora nuestra gama de calzado deportivo para hombre. Diseño y funcionalidad para
+                    todas tus actividades.</p>
+            </div>
+        </div>
+        <p>&copy; 2023 ESPORNETS. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
