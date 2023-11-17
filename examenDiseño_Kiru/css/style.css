@@ -1,84 +1,47 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-/*Ecabenzado h1 estilo con el logo*/
-
-#banner{
+/* Cabecera */
+#banner {
     text-align: center;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 2;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
     height: 160px;
+    line-height: 160px;
     color: white;
-    background-color: #011376;
-    margin-bottom: 0px;
-}
-body{
-    background-color: #e2dfde;
-    text-align: center;
-}
-html {
-    min-height: 100%;
-    position: relative;
-  }
-  body {
+    background-color: #071357;
     margin: 0;
-  }
-
-section{
-    width: 330px;
-    text-align: center;
-    line-height: 1.8em;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    background-color: white;
-    padding-bottom: 22px;
-    margin-left: 25%;
-    float: left;
 }
-.Productos{
-  border-spacing: 90px;
-}
-/*
-el tamaño de las imgenes seran de 50px.
-*/
-img{
-    width: 100%;
-    height: 100%px;
-    display: block;
 
-
+#banner img {
+    vertical-align: middle;
+    max-height: 90%;
+    max-width: 100%;
 }
 #logo{
-    width: 100px;
-    height: 100px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
 
-}
-a{
-    text-decoration: none;
-    color: rgb(245, 88, 88);
-}
-/*barra lateral*/
-aside{
-    padding-left: 10px;
-    float: right;
-    margin-right: 5px;
-    width: 230px;
-    position: relative;
-    margin-top: 30px;
-}
-/* Menú principal */
-nav a::after{
-    content: "|";
-    padding: 0 10px;
-}
-nav{
+/* Estilos para el menú */
+nav ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
-    background: linear-gradient(rgb(2, 178, 231), rgb(217, 217, 209));
-
+    background-color: rgb(234, 245, 220);
+    margin: 0;
+    height: 90px;
 }
+
+
+
+
+/* Menú principal */
+
 nav > ul > li {
     display: inline-block;  /*Los ponemos en horizontal*/
     text-decoration: none;  /*list-style: none;*/
@@ -101,7 +64,7 @@ nav > ul > li > a {
 
 /*Enlaces del submenú*/
 #submenu > ul > li > a {
-    color: white;
+    color: rgb(0, 0, 0);
     margin: auto;
     text-decoration: none;
 }
@@ -116,13 +79,13 @@ nav > ul > li > a {
     overflow: hidden;
     width: 145px;
     /*Transición de altura, tipo y duración*/
-    transition: height linear 2s;
+    transition: height linear 0.3s;
     /*Para que no se solapen*/
     z-index: 2;
 }
 /*La transición*/
 #submenu:hover > ul {
-    height: 200px;
+    height: 140px;
 }
 
 
@@ -132,11 +95,6 @@ nav > ul > li > a {
     padding-bottom: 10px;
     display: block;
     margin: 0px;
-    background-color: #426eff;
-}
-/*Solo Impares*/
-#submenu > ul > li:nth-child(odd) {
-    background-color: #4248ff !important;
 }
 
 
@@ -165,7 +123,7 @@ nav > ul > li > ul > li:first-child:before {
     border: 5px solid transparent;
     /* Como es un cuadrado (BORDES) pero solo le pongo dimensión en la bottom
     lo que conseguimos es que haga un triángulo */
-    border-bottom-color: #f06529;
+    border-bottom-color: #72f029;
      /* Posición del contenedor donde aparece, mitad en este caso */
     left: 50%;
     top: -11px;
@@ -173,3 +131,78 @@ nav > ul > li > ul > li:first-child:before {
     z-index: 19;
 }
 
+
+
+
+
+
+/* Secciones */
+div section {
+    width: 330px;
+    text-align: center;
+    line-height: 1.8em;
+    padding: 10px;
+    background-color: white;
+    margin: 20px 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    display: inline-block;
+  
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Para alinear arriba */
+    padding-top: 50px; /* Espacio en la parte superior */  
+}
+
+span{
+    height: 40px;
+}
+/*img*/
+section img{
+    width: 100%;
+    height: 250px;
+}
+
+/* Barra lateral */
+aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    padding-left: 20px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    height: 110px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around; /* Distribuye las columnas equitativamente */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan a la siguiente línea */
+}
+
+.column {
+    flex: 1;
+    max-width: 300px; /* Ancho máximo de cada columna */
+    padding: 0 20px;
+    box-sizing: border-box; /* Para incluir el padding en el ancho máximo */
+}
+
+
+table{
+    margin-bottom: 140px;
+}
