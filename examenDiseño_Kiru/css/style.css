@@ -122,6 +122,8 @@ nav > ul > li > a {
     height: 0px;
     overflow: hidden;
     width: 145px;
+    margin-top: 30px;
+    background: linear-gradient(rgb(75, 197, 224), 10%, pink);
     /*Transición de altura, tipo y duración*/
     transition: height linear 0.3s;
     /*Para que no se solapen*/
@@ -129,7 +131,7 @@ nav > ul > li > a {
 }
 /*La transición*/
 #submenu:hover > ul {
-    height: 140px;
+    height: 159px;
 }
 
 
@@ -253,8 +255,8 @@ footer {
 /*estilos tablas productos*/
 
 table{
-    margin-bottom: 140px;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table th{
@@ -263,4 +265,43 @@ table th{
 .ac{
     background-color: rgb(249, 124, 124);
 }
+video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
 
+}
+
+.articulo1{
+    animation: animArticle1 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.articulo3{
+    animation: animArticle3 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+#femenino .chincheta {
+    left: 199px;
+}
+
+@keyframes animArticle1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+}
+
+@keyframes animArticle3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(2deg);
+    }
+}
