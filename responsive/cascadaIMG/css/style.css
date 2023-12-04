@@ -16,30 +16,42 @@ position: static !important;
 /* los elementos dejarán de ser flotantes */
 float: none !important;
 }
-aside{
-    height: 300px !important;
+aside {
+    /* Cambia la altura a 200px cuando el ancho sea menor a 600px */
+    height: 400px !important;
 }
 }
 
 nav{
+    background-image: url("../img/banner.avif");
+    background-repeat: no-repeat;
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-color: brown;
+    background-color: brown;
+    background-size: cover;
 }
 
-header{
+header{   
+    background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 500px;
     background-color: aquamarine;
+
 }
 
 aside{
+    background-repeat: no-repeat;
     width: 35%;
-    height: 50px;
+    height: 300px;
     float: left;
     background-color: rgb(133, 40, 191);
+
 }
 main{   
-    height: 50px;
+
+    height: 300px;
     background-color: rgb(137, 137, 137);
+    background-color: brown;
+
 }
