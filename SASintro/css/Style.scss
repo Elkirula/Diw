@@ -1,0 +1,38 @@
+// Variables de color
+$color-naranja: #FF8000;
+$color-verde: #2E5F64;
+
+// Estilos para los dos divs
+#primero,
+#segundo {
+  padding: 20px;
+}
+
+// Estilos para el primer div
+#primero {
+  .destacado {
+    color: $color-naranja;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 6px;
+  }
+  p:not(.destacado)::first-line {
+    font-style: italic;
+  }
+}
+
+// Estilos para el segundo div
+#segundo {
+  .destacado {
+    color: $color-verde;
+    font-size: 1.4em;
+    text-decoration: underline;
+    padding: 5px;
+  }
+  p:not(.destacado)::first-line {
+    font-style: italic;
+  }
+  #parrafos {
+    text-align: right;
+  }
+}
