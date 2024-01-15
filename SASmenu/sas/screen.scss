@@ -1,0 +1,121 @@
+// Variables
+$color-texto: #eee;
+$color-texto-hover: #fff;
+$color-fondo: #666;
+$color-fondo-hover: #888;
+
+
+@mixin esquemaColor($texto, $fondo) {
+  color: $texto;
+  background-color: $fondo;
+}
+
+@mixin esquemaColorHover($texto, $fondo) {
+  &:hover {
+    color: $texto;
+    background-color: $fondo;
+  }
+}
+
+@mixin boxSizing($valor) {
+  -webkit-box-sizing: $valor;
+  -moz-box-sizing: $valor;
+  box-sizing: $valor;
+}
+
+@mixin transicion($property, $duration, $timing: linear) {
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+@mixin animacion($name, $duration, $timing: linear) {
+  -webkit-animation: $name $duration $timing;
+  -moz-animation: $name $duration $timing;
+  animation: $name $duration $timing;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  @include esquemaColor(#000000, #cbcaca);
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+nav {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: $color-fondo;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    > ul {
+      width: 100%;
+      height: 32px;
+      @include esquemaColor($color-texto, $color-fondo);
+      
+    }
+
+    a {
+      @include esquemaColor($color-texto, $color-fondo);
+      text-decoration: none;
+      width: 160px;
+      padding: 7px 20px;
+      display: block;
+      text-align: center;
+      @include esquemaColorHover($color-texto-hover, $color-fondo-hover);
+      @include transicion(all, 0.4s);
+     
+    }
+  }
+}
+
+ul.submenu {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  @include transicion(height, 0.5s, ease-out);
+  display: inline-block;
+  margin-left: -100px;
+}
+
+li.categoria {
+
+  > a {
+    @include transicion(padding, 0.4s, ease-out);
+
+    &:hover {
+      padding: 10px 20px;
+    }
+  }
+
+  &:hover {
+    ul.submenu {
+      height: 100px;
+    }
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  @include esquemaColor($color-texto, $color-fondo);
+  @include boxSizing(border-box);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+}
