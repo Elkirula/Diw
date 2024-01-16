@@ -1,5 +1,4 @@
-@import "_mixin.scss";
-@import "_contenido.scss";
+@import "./_mixin.scss";
 // Variables
 $color-texto: #eee;
 $color-texto-hover:lighten($color-texto,10%);
@@ -91,6 +90,7 @@ footer {
   padding: 5px;
 }
 
+
 %button-block {
    box-sizing: border-box;
    width: 100%;
@@ -100,7 +100,7 @@ footer {
    cursor: pointer;
  }
  
- // Placeholder para input
+
  %input-block {
    box-sizing: border-box;
    width: 100%;
@@ -152,7 +152,7 @@ footer {
  
    // Clase button-action
    .button-action {
-     background-color: $colorFondo; // Reemplazar con el color de fondo de screen.scss
+     background-color: $colorFondo; 
      color: white;
  
      &:hover {
@@ -161,7 +161,7 @@ footer {
    }
  
    // Estilos responsivos para size == medium
-   @include responsive-design(padding, 10px 20px);
+   @include responsiveDesign(padding, 10px 20px);
  }
  
  
