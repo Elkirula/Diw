@@ -1,0 +1,120 @@
+@import "_mixin.scss";
+@import "_contenido.scss";
+@import "_menu.scss";
+
+// Variables
+$color-texto: #eee;
+$color-texto-hover:lighten($color-texto,10%);
+$colorFondo: #15a;
+$colorFondo-hover: lighten($colorFondo,10%);
+$colorTitulo:darken($colorFondo,10%)  ;
+$theme:dark;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  @include esquemaColor(#000000, #cbcaca);
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  @include esquemaColor($color-texto, $colorFondo);
+  @include boxSizing(border-box);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+}
+
+%button-block {
+   box-sizing: border-box;
+   width: 100%;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 1px solid transparent;
+   cursor: pointer;
+ }
+ 
+ // Placeholder para input
+ %input-block {
+   box-sizing: border-box;
+   width: 100%;
+   border-radius: 5px;
+   padding: 5px 10px;
+   border: 1px solid #bbb;
+ }
+ 
+ // Estilos para el div con identificador "contenido"
+ #contenido {
+   padding: 30px 20px;
+ 
+   // Clase col-left
+   .col-left {
+     box-sizing: border-box;
+     width: 30%;
+     float: left;
+     padding: 10px;
+ 
+     @include responsiveDesign(float, none);
+     @include responsiveDesign(width, 100%);
+ 
+     // Estilos adicionales para input y botones del login
+     input {
+       @extend %input-block;
+     }
+ 
+     button {
+       @extend %button-block;
+     }
+   }
+ 
+   // Clase col-right
+   .col-right {
+     box-sizing: border-box;
+     margin-left: 30%;
+     width: 70%;
+     padding: 10px;
+ 
+     h1 {
+       color: $colorTitulo;
+       font-size: 1.6em;
+ 
+       // Estilos responsivos para size == small
+       @include responsiveDesign(margin-left, 0);
+       @include responsiveDesign(width, 100%);
+     }
+   }
+ 
+   // Clase button-action
+   .button-action {
+     background-color: $colorFondo; // Reemplazar con el color de fondo de screen.scss
+     color: white;
+ 
+     &:hover {
+       background-color: lighten($colorFondo, 20%);
+     }
+   }
+ 
+   // Estilos responsivos para size == medium
+   @include responsiveDesign(padding, 10px 20px);
+ }
+ 
+ header{
+  @if $theme == dark{
+    $colorFondo: #138;
+  }@else if $theme == light{
+    $colorFondo:#ddf;
+    $color-texto:#138
+  }
+ }
