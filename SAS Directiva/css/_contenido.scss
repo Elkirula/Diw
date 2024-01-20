@@ -79,33 +79,17 @@
 	display: inline-block;
   }
   
-  .icon-menu {
-	background-image: url(../images/menu.png);
-	background-position: 0px 0px;
-	height: 30px;
-	width: 32px;
-  }
-  
-  .icon-news {
-	background-image: url(../images/news.png);
-	background-position: 0px -90px;
-	height: 30px;
-	width: 39px;
-  }
-  
-  .icon-money {
-	background-image: url(../images/money.png);
-	background-position: 0px -100px;
-	height: 50px;
-	width: 54px;
-  }
-  
-  .icon-contact {
-	background-image: url(../images/contact.png);
-	background-position: 0px 0px;
-	height: 30px;
-	width: 30px;
-  }
+  $iconos: ((menu, "../img/menu.png", 0px, 0px, 30px, 32px), (news, "../img/news.png", 0px, -90px, 30px, 39px), (money, "../img/money.png", 0px, -100px, 50px, 54px),
+  (contact, "../img/contact.png", 0px, 0px, 30px, 30px));
+
+  @each $icono in $iconos{
+    .icon-#{nth($icono,1)}{
+            background-image: url(nth($icono,2));
+            background-position: nth($icono,3) nth($icono,4);
+            height: nth($icono,5);
+            width:nth($icono,6);
+    }
+}
   
   @keyframes iluminar {
 	from {

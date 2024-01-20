@@ -62,28 +62,28 @@ i {
 }
 
 .icon-menu {
-  background-image: url(../images/menu.png);
+  background-image: url("../img/menu.png");
   background-position: 0px 0px;
   height: 30px;
   width: 32px;
 }
 
 .icon-news {
-  background-image: url(../images/news.png);
+  background-image: url("../img/news.png");
   background-position: 0px -90px;
   height: 30px;
   width: 39px;
 }
 
 .icon-money {
-  background-image: url(../images/money.png);
+  background-image: url("../img/money.png");
   background-position: 0px -100px;
   height: 50px;
   width: 54px;
 }
 
 .icon-contact {
-  background-image: url(../images/contact.png);
+  background-image: url("../img/contact.png");
   background-position: 0px 0px;
   height: 30px;
   width: 30px;
