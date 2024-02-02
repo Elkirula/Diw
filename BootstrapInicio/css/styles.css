@@ -1,0 +1,16 @@
+/* styles.css */
+
+/* Estilo para el fondo del encabezado */
+.header-bg {
+    background-color: #3498db; /* Puedes cambiar el color a tu preferencia */
+    color: #fff; /* Color del texto sobre el fondo */
+    padding: 10px; /* Añade un poco de espacio interno para mejorar la apariencia */
+}
+
+/* Estilo para las columnas con fondo */
+.col-bg {
+    background-color: #ecf0f1; /* Puedes cambiar el color a tu preferencia */
+    padding: 10px; /* Añade un poco de espacio interno para mejorar la apariencia */
+    margin-bottom: 5px; /* Añade un poco de espacio en la parte inferior para separar las columnas */
+    margin-left: 2px;
+}
