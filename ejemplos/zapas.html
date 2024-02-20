@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Sneaker Shop - Running</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .jumbotron {
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .sneaker {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sneaker Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Running</a></li>
+                            <li><a class="dropdown-item" href="#">Basketball</a></li>
+                            <li><a class="dropdown-item" href="#">Casual</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Dropdown Menu -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Running Shoes</h1>
+        <p class="lead">Discover our collection of running shoes designed for comfort and performance.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Running Shoes Cards -->
+            <div class="col-lg-9">
+
+                <div class="row">
+
+                    <!-- Running Shoe 1 -->
+                    <div class="col-lg-4 sneaker">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Running Shoe 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Running Shoe Model 1</h5>
+                                <p class="card-text">$129.99</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Running Shoe 2 -->
+                    <div class="col-lg-4 sneaker">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Running Shoe 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Running Shoe Model 2</h5>
+                                <p class="card-text">$89.99</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Running Shoe 3 -->
+                    <div class="col-lg-4 sneaker">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Running Shoe 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Running Shoe Model 3</h5>
+                                <p class="card-text">$109.99</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <aside class="bg-light p-4">
+                    <h2>Running Accessories</h2>
+                    <p>Explore our range of accessories for a complete running experience.</p>
+                    <a href="#" class="btn btn-primary">View Accessories</a>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Item Added to Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    The selected item has been added to your cart.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Go to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
