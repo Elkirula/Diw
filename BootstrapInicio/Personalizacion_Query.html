@@ -2,50 +2,42 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css" type="text/css"> 
-    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css" type="text/css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Práctica 5.1</title>
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css" type="text/css">
+    <style>
+        .row {
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .col div {
+            margin: 5px;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 bg-success">Header</div>
+        </div>
+        <div class="row  ">
+            <div class="col-md-4 col-sm-6 p-5 m-1 col-xs-12 bg-danger">1</div>
+            <div class="col-md-4 col-sm p-5 m-1 col-xs-12 bg-danger">2</div>
+            <div class="col-md d-sm-none d-md-block col-xs-12 p-5 m-1 bg-danger">3</div>
+            <div class="d-md-none col-sm-block m-1 col-xs-12 bg-danger" >3</div>
 
-        <div class="row header-bg">
-            <div class="col-md-12"><h1>header</h1></div>
         </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 m-1 col-xs-12 bg-warning">Footer 1</Footer></div>
+            <div class="col-md col-sm-12 m-1 col-xs-12 bg-warning" >Footer 2</Footer></div>
 
-        <div class="row">
-            <div class="col-md-3 offset-md-3 col-sm-3 col-xs-6 col-bg ">1</div>
-            <div class="col-md-3  col-sm-3 col-xs  col-bg col-xs" >2</div>
-            <div class="col-md-3 col-sm-3 col-bg col-xs-6 ">3</div>
-            <div class="col-md-3 offset-md-5  col-sm  col-bg col-xs ">4</div>
-        </div>
-        <div class="row d-md-none  d-xs-none d-sm-block">
-            <div class="col-md-12 col-bg ">Desktop</div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-3 order-sm-4  col-sm-3 col-bg">d</div>
-            <div class="col-md-3 order-sm-3 col-sm-3  col-bg">c</div>
-            <div class="col-md-3 order-sm-2 col-sm-3 col-bg">b</div>
-            <div class="col-md order-sm-1   col-sm col-bg">a</div>
-        </div>
-        <div class="row d-sm-none d-xs-none d-md-block">
-            <div class="col-md-12 col-bg ">Desktop</div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 order-sm-2 offset-md-3 col-sm-6 col-bg"><p>:(</p></div>
-            <div class="col-md-3 order-sm-1 col-bg col-sm"><p>:D</p></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-bg">Footer</div>
         </div>
     </div>
-
 </body>
-
 
 </html>
